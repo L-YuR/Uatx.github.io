@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malformaciones bucales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <header>
+            <a name="inicio"></a>
+            <div class="textos">
+                <h1>MALFORMACIONES EN LA CAVIDAD BUCAL</h1>
+                <h2>¿Qué es y cómo se clasifican?</h2>
+                <h2>Causas y consecuencias</h2>
+            </div>
+        </header>
+    </header>
+    <main>
+        <section class="uno">
+            <h3>Introducción</h3> <br>
+            <p>Las malformaciones de los dientes pueden tener distintas causas, principalmente genéticas o ambientales, estas deformidades dentales son alteraciones congénitas en los tejidos del sistema dental que resultan de un exceso o deficiencia en su desarrollo. En términos genéticos, diversas mutaciones y síndromes hereditarios han sido vinculados con estas malformaciones            </p><br>
+        </section>
+        <section class="uno">
+            <h3>¿Qué es una malformación?</h3> <br>
+            <p>Son anomalías dentales congénitas de los tejidos del diente que se dan por falta o por aumento en el desarrollo de estos. La mayoría ocurren entre la sexta y octava semana de vida intrauterina</p><br>
+        </section>
+
+        <section class="dos" name="Clasificación">
+            <h3>Clasificación de malformciones a nivel bucal:</h3><br>
+            <div class="contenedor">
+                <h4>Alteraciones del desarrollo de los maxilares <br></h4> <br>
+                <button onclick="mostrarTexto('texto1')"><img src="img/Agenesia2.jpg" alt=""></button>
+                <div class="texto" id="texto1">
+                    <h1>Agenesia</h1><br>
+                    <p>Defecto congenito, provoca la ausencia del maxilar o mandíbula</p><br>
+                    <ul>
+                        <li>Una porción</li>
+                        <li>Todo un lado</li>
+                    </ul>
+                    <p>También causa la deformación y perdida del oído</p><br>
+                </div>
+                <button onclick="mostrarTexto('texto2')"><img src="img/Micrognasia.jpg" alt=""></button>
+                <div class="texto" id="texto2">
+                    <h1>Micrognasía</h1><br>
+                    <p>Es una disminución de la mandíbula provocada por una deﬁciencia de crecimiento de los cóndilos, se observa en el síndrome de Pierre Robin </p><br>
+                </div>
+                <button onclick="mostrarTexto('texto3')"><img src="img/Macrognasia2.jpg" alt=""></button>
+                <div class="texto" id="texto3">
+                    <h1>Macrognasia</h1><br>
+                    <p>Es el aumento de tamaño de la mandíbula, generalmente está asociado a alteraciones sistémicas, la causa es idiopática, es posible diferenciar con la displasia ﬁbrótica facial, hemihipertrofia facial o neoplasias. </p><br>
+                </div>
+            </div>
+            <div class="contenedor">
+                <h4>Alteraciones del desarrollo que afectan la Región Bucofacial<br></h4>
+            <button onclick="mostrarTexto('texto4')"><img src="img/LFisurado.jpg" alt=""></button>
+                <div class="texto" id="texto4">
+                    <h1>Labio Fisurado</h1><br>
+                <p>Se caracteriza por un defecto  en forma de cuña que es consecuencia de  una ausencia de fusión de las dos partes del labio
+                    Afecta labio superior</p><br>
+            </div>
+            <button onclick="mostrarTexto('texto5')"><img src="img/PFisurado.jpg" alt=""></button>
+                <div class="texto" id="texto5">
+                    <h1>Fisura Palatina</h1><br>
+                <p>Consiste en una apertura en el cielo de la boca. Hay una comunicación directa entre la boca y nariz. Puede extenderse desde el paladar duro (junto a los dientes), hasta el paladar blando (cerca de la garganta). Si no se corrige, el paladar fisurado crea fundamentalmente trastornos del habla. También produce:</p><br>
+                <ul>
+                   <li>Dificultad de alimentación</li>
+                   <li>Problemas de erupción dentaria</li>
+                   <li>Anomalias del desarrollo maxilar</li>
+                </ul>
+            </div>
+            </div>
+            <script>
+                var ultimoTextoMostrado = null;
+            
+                function mostrarTexto(idTexto) {
+                    var texto = document.getElementById(idTexto);
+                    
+                    // Si el texto ya está abierto, se cierra
+                    if (texto.style.display === "block") {
+                        texto.style.display = "none";
+                        ultimoTextoMostrado = null;
+                    } else {
+                        // Si hay algún texto abierto, se cierra antes de abrir el nuevo
+                        if (ultimoTextoMostrado !== null) {
+                            ultimoTextoMostrado.style.display = "none";
+                        }
+                        
+                        texto.style.display = "block";
+                        ultimoTextoMostrado = texto;
+                    }
+                }
+        
+            </script>
+        </section>
+
+        <section class="uno">
+        
+            <h3>Causas y consecuencias</h3> <br>
+            <h2>Causas</h2>
+            <p>Distintas causas pueden dar origen a malformaciones dentarias: herencia (puede ser de acuerdo a los cuatro tipos de herencia mendeliana), multifactorial (interacción de factores genéticos y ambientales), cromosómicos (muy raro que existan condiciones con defectos específicos de este tipo afectando los dientes), factores ambientales (drogas, virus, bacterias, radiaciones, sustancias químicas).
+                <p>Las malformaciones de los dientes pueden afectar al esmalte, dentina, cemento, pulpa dentaria, ya sea a un solo tejido o varios de ellos.</p>
+                <h2>Consecuencias</h2>
+            <p>Pueden convertir a ciertas personas en tímidas, retraídas y temerosas, son capaces de producir malestar social, crear complejos de inferioridad y actitudes negativas que alteren su desempeño ante la vida
+            </p>
+            </p>
+        </section>
+        
+        <section class="dos">
+            <div id="stats">0 intentos</div>
+      <div id="wrapper">
+         <div id="game"></div>
+      </div>
+      <script src="script.js"></script>
+        </section>
+    </main>
+
+    <footer class="uno">
+        <p>...</p>
+        <img src="img/qr.jpeg" width="200px">
+    </footer>
+</body>
+</html>
